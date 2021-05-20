@@ -19,7 +19,7 @@ function GetQueryStringParams(sParam,defaultVal) {
 }
 
 
-jQuery.getJSON(GetQueryStringParams("config","config.json"), function(data, textStatus, jqXHR) {
+jQuery.getJSON(GetQueryStringParams("config","https://cdn.jsdelivr.net/gh/lisalrt/SHS2020-2021/network_ouchy/config.json"), function(data, textStatus, jqXHR) {
 	config=data;
 	
 	if (config.type!="network") {
